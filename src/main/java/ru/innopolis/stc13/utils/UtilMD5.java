@@ -26,7 +26,7 @@ public class UtilMD5 {
         while( md5Hex.length() < 32 ){
             md5Hex = "0" + md5Hex;
         }
-
+//test commit
         return md5Hex;
     }
 }
