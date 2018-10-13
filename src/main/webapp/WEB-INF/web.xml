@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>MyFirtServlet</display-name>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/resources/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <!-- dddddddddddddddddddddddddddddddddddddddd -->
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/inner/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>manager</servlet-name>
+    <servlet-class>ru.innopolis.stc13.controller.ManagerServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>manager</servlet-name>
+        <url-pattern>/inner/manager</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>client</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.ClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>client</servlet-name>
+        <url-pattern>/inner/client</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>teacher</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.TeacherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher</servlet-name>
+        <url-pattern>/inner/teacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>user</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user</servlet-name>
+        <url-pattern>/inner/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>role</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.RoleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>role</servlet-name>
+        <url-pattern>/inner/role</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>ru.innopolis.stc13.controller.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
